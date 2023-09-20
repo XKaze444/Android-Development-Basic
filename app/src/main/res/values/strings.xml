@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BelajarAndroidActivity</string>
+    <string name="judul_doa"><![CDATA[Doa & Dzikir APP]]></string>
+    <string name="doaharian"><![CDATA[Doa & Dzikir Harian]]></string>
+    <string name="doaarabُ">اَلْحَمْدُ ِللهِ الَّذِىْ اَحْيَانَا بَعْدَمَآ اَمَاتَنَا وَاِلَيْهِ النُّشُوْر</string>
+    <string name="doalatinُ">Alhamdu lillahil ladzii ahyaanaa ba\'da maa amaa tanaa wa ilahin nusyuuru</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenCameraActivity"
+    android:orientation="vertical"
+
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a picture first"
+        android:layout_marginTop="230dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+    
+<ImageButton
+    android:id="@+id/ibCamera"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:background="@drawable/baseline_camera_alt_24"
+    android:backgroundTint="@color/black"
+    android:layout_gravity="center"
+    />
+
+<ImageView
+    android:id="@+id/ivSample"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:src="@drawable/baseline_image_24"
+    android:layout_gravity="center"
+    />
+
+
+
+</LinearLayout>

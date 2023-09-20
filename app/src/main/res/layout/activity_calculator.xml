@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="146dp"
+        android:layout_gravity="center"
+        android:src="@drawable/calculator" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Calculator Pintar"
+    android:textSize="30dp"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+   />
+
+    <TextView
+        android:id="@+id/labelangka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12sp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Masukkan Angka Pertama : "
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/inputangkasatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <TextView
+        android:id="@+id/labelangka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12sp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Masukkan Angka Kedua : "
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/inputangkadua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btnplus"
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:strokeColor="#000"
+        app:strokeWidth="3sp"
+        />
+
+    <Button
+        android:id="@+id/btnmin"
+        android:layout_width="120dp"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#8800FF"
+        android:fontFamily="@font/poppins_medium"
+        android:text="-"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:strokeColor="#000"
+        app:strokeWidth="3sp"
+        />
+
+    <Button
+        android:id="@+id/btnpersen"
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#0048FF"
+        android:fontFamily="@font/poppins_medium"
+        android:text="%"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        app:strokeColor="#000"
+        app:strokeWidth="3sp"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnx"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#007806"
+            android:fontFamily="@font/poppins_medium"
+            android:text="X"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:strokeColor="#000"
+            app:strokeWidth="3sp"
+            />
+
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="120dp"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#8A3B3B"
+            android:fontFamily="@font/poppins_medium"
+            android:text="/"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:strokeColor="#000"
+            app:strokeWidth="3sp"
+            />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CLEAR"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:strokeColor="#000"
+            app:strokeWidth="3sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASIL : "
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/hasilangka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+
+        />
+
+
+</LinearLayout>

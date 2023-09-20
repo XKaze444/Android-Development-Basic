@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardimage"
+        android:layout_width="300dp"
+        android:layout_height="460dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivimage"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fuji" />
+
+            <TextView
+                android:id="@+id/tvlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivimage"
+                android:layout_centerHorizontal="true"
+                android:text="Fuji Mountain"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/ivimage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="70dp"
+                android:layout_toRightOf="@+id/tvlocation"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/favorite" />
+
+            <TextView
+                android:id="@+id/ivtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivimage"
+                android:layout_marginTop="55dp"
+                android:justificationMode="inter_word"
+                android:text="Amazing view can be enjoyed from above of refreshing city."
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                />
+            <ImageView
+                android:id="@+id/loka"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/location"
+                android:layout_below="@+id/ivtext"
+                android:layout_marginTop="16dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100/Package"
+                android:layout_toRightOf="@+id/price"
+                android:layout_below="@+id/ivtext"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                />
+
+            <ImageView
+                android:id="@+id/price"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/baseline_price_check_24"
+                android:layout_below="@+id/ivtext"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="190dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Japan"
+                android:layout_toRightOf="@+id/loka"
+                android:layout_below="@+id/ivtext"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="2dp"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Plan Trip Now"
+                android:layout_below="@+id/loka"
+                android:layout_marginTop="20dp"
+                app:strokeColor="#000"
+                app:strokeWidth="3sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#00000000"
+                android:fontFamily="@font/poppins_medium"
+                />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    
+
+    
+</RelativeLayout>

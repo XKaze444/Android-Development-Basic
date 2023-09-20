@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hudi" />
+
+    <ImageButton
+        android:id="@+id/ibback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/typeproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y-HOODIE"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/gambar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_medium"
+
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$42.44"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#FF0000"
+        />
+
+    <ImageButton
+        android:id="@+id/favor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/typeproduk"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-11dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/favorite"
+        />
+
+    <ImageButton
+        android:id="@+id/star1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star1"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#CD9A00"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/star2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star1"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#CD9A00"
+        android:layout_toRightOf="@+id/star1"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:id="@+id/star3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star1"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="#CD9A00"
+        android:layout_toRightOf="@+id/star2"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:id="@+id/star4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star1"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="80dp"
+        android:backgroundTint="#CD9A00"
+        android:layout_toRightOf="@+id/star3"
+        android:layout_alignParentStart="true"
+        />
+    <ImageButton
+        android:id="@+id/star5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star1"
+        android:layout_below="@+id/typeproduk"
+        android:layout_marginEnd="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="100dp"
+        android:backgroundTint="#656565"
+        android:layout_toRightOf="@+id/star4"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/ratingnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/harga"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/star5"
+        android:fontFamily="@font/poppins_medium"
+        android:text="4.0"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C3C1C1"
+        android:layout_below="@id/star1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BRAND"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/bang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suprim"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/brand"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        android:layout_below="@+id/view"
+        />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TYPE"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@+id/brand"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/dimensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIMENSIONAL"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_below="@+id/type"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/tipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOODIE PUTIH ORIGINAL ASELI MARS"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/brand"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        android:layout_below="@+id/bang"
+        />
+
+
+    <TextView
+        android:id="@+id/dimen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XL,M,S,L"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/brand"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        android:layout_below="@+id/tipe"
+
+        />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dimen"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#8C4100"
+        android:fontFamily="@font/poppins_medium"
+        android:text="PURCHASE"
+        android:textStyle="bold"
+        app:strokeColor="#FF6E36"
+        app:strokeWidth="3sp"
+        />
+</RelativeLayout>

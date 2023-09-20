@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListPemrogramanActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivimage"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="-100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangle"
+
+            />
+
+        <TextView
+            android:id="@+id/app"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="DO'A DAN DZIKIR APP"
+            android:textSize="33sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <TextView
+            android:id="@+id/doa"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="PILIHAN DOA DAN DZIKIR"
+            android:textSize="26dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="173dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/cvSelengkapnya"
+            app:icon="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/doa"
+            android:layout_marginTop="195dp"
+            android:layout_marginStart="40dp"
+            android:text="Selengkapnya"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:backgroundTint="#DF9809"
+            app:strokeColor="#000000"
+            app:strokeWidth="3sp"
+            />
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/ngaji"
+            android:layout_toRightOf="@+id/app"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="390dp"
+        android:layout_height="400dp"
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvbahasapemrograman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+
+</ScrollView>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="BERLANGGANAN"
+        android:layout_alignParentBottom="true"
+        app:icon="@drawable/add"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="3sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#DF9809"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>
